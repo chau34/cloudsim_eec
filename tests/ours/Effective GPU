@@ -1,0 +1,86 @@
+machine class:
+{
+        Number of machines: 16
+        CPU type: X86
+        Number of cores: 8
+        Memory: 16384
+        S-States: [120, 100, 100, 80, 40, 10, 0]
+        P-States: [12, 8, 6, 4]
+        C-States: [12, 3, 1, 0]
+        MIPS: [3000, 2400, 2000, 1500]
+        GPUs: no
+}
+
+machine class:
+{
+        Number of machines: 16
+        CPU type: X86
+        Number of cores: 8
+        Memory: 16384
+        S-States: [180, 150, 150, 120, 100, 40, 0]
+        P-States: [48, 36, 30, 12]
+        C-States: [48, 12, 8, 0]
+        MIPS: [3000, 2400, 2000, 1500]
+        GPUs: yes
+}
+
+task class:
+{
+        Start time: 0
+        End time : 50000000
+        Inter arrival: 10000
+        Expected runtime: 10000000
+        Memory: 8
+        VM type: LINUX
+        GPU enabled: no
+        SLA type: SLA0
+        CPU type: X86
+        Task type: HPC
+        Seed: 520200
+}
+
+task class:
+{
+        Start time: 0
+        End time : 1000000
+        Inter arrival: 1000
+        Expected runtime: 1000000
+        Memory: 8
+        VM type: LINUX
+        GPU enabled: yes
+        SLA type: SLA0
+        CPU type: X86
+        Task type: CRYPTO
+        Seed: 520200
+}
+
+task class:
+{
+        Start time: 20000000
+        End time : 21000000
+        Inter arrival: 1000
+        Expected runtime: 1000000
+        Memory: 8
+        VM type: LINUX
+        GPU enabled: yes
+        SLA type: SLA0
+        CPU type: X86
+        Task type: CRYPTO
+        Seed: 520200
+}
+
+task class:
+{
+        Start time: 30000000
+        End time : 31000000
+        Inter arrival: 1000
+        Expected runtime: 1000000
+        Memory: 8
+        VM type: LINUX
+        GPU enabled: yes
+        SLA type: SLA0
+        CPU type: X86
+        Task type: CRYPTO
+        Seed: 520200
+}
+
